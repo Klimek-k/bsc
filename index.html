@@ -10,12 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
 
     <div id="baner-top">
         <div id="baner-text">
-            <h4> <span>SALE</span> Pakiet: grupa sygnałowa + kurs!</h4>
+            <h4 onclick="scrollToElement('baner-text-content')"> <span>SALE</span> Pakiet: grupa sygnałowa + kurs!</h4>
         </div>
     </div>
 
@@ -166,16 +168,201 @@
             </div>
         </div>
 
-        <div id="container-text2">
-            <div id="baner-text">
+        <div id="container-text3">
+            <div id="baner-text" onclick="scrollToElement('oferty')">
                 <div id="baner-text-content">
                     <p><span>SALE</span>Zobacz sam! <i class="fa-regular fas fa-arrow-right"></i></p>
                     
                 </div>
             </div>
-            <h2>Oferty</h2>
+            <h2 id="oferty">Oferty</h2>
             <p>Poznaj nasze oferty, każda posiada coś wyjątkowego, wybierz coś dla siebie!</p>
         </div>
+
+        <div id="container-3box">
+            <div class="box1">
+                <h3>Grupa sygnałowa</h3>
+                <p class="price">250zł/msc</p>
+                <p class="undertext">Oszczędź 50% <s>500 zł</s></p>
+                <div class="list">
+                    <div class="list-element">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Dostęp do grupy sygnałowej na miesiąc</p>
+                    </div>
+                    <div class="list-element">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Pomoc 24/7</p>
+                    </div>
+                    <div class="list-element">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Wysoka skuteczność</p>
+                    </div>
+                    <div class="list-element">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Codziennie nawet do kilku sygnałów! <br> 
+                            *w zależności od dnia, rynek jest inny każdego dnia!</p>
+                    </div>
+                </div>
+                <div class="container-button">
+                    <div class="button">Kup teraz!</div>
+                </div>
+            </div>
+
+            <div class="box1">
+                <h3>Kurs</h3>
+                <p class="price">250zł/raz</p>
+                <p class="undertext">Oszczędź 50% <s>500 zł</s></p>
+                <div class="list">
+                    <div class="list-element">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Gwarantowany dostęp na zawsze</p>
+                    </div>
+                    <div class="list-element">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Pomoc 24/7</p>
+                    </div>
+                    <div class="list-element">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Płatność jednorazowa</p>
+                    </div>
+                    <div class="list-element">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Jak sobie radzić z emocjami na rynku</p>
+                    </div>
+                    <div class="list-element">
+                        <i class="fa-solid fa-check"></i>
+                        <p>7 różnych tematów związanych z tą branżą</p>
+                    </div>
+                </div>
+                <div class="container-button">
+                    <div class="button">Kup teraz!</div>
+                </div>
+            </div>
+
+            <div class="box1">
+                <h3>2 w 1</h3>
+                <p class="price">450zł/raz</p>
+                <p class="undertext">Potem grupa 200zł/msc</p>
+                <div class="list">
+                    <div class="list-element">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Dostęp do kursu na zawsze</p>
+                    </div>
+                    <div class="list-element">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Pomoc 24/7</p>
+                    </div>
+                    <div class="list-element">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Kontakt z analitykiem</p>
+                    </div>
+                    <div class="list-element">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Dostęp do specjalnego folderu wraz z specjalnymi dodatkami!</p>
+                    </div>
+                    <div class="list-element">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Priority support</p>
+                    </div>
+                </div>
+                <div class="container-button">
+                    <div class="button">Kup teraz!</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="container-text4">
+            <p class="blue-text">Sam się przekonaj</p>
+            <h2>Opinie</h2>
+            <p>Poznaj opinie grupowiczów</p>
+        </div>
+
+        <div id="container-opinie">
+            <div class="swiper-button-prev"></div> <!-- Przycisk "Poprzedni" -->
+            <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p>Bardzo polecam, fajna obsługa i chłopaki szybko odpowiadają na pytania </p>
+                    <p><i class="fa-light fas fa-star"></i>
+                        <i class="fa-light fas fa-star"></i>
+                        <i class="fa-light fas fa-star"></i>
+                        <i class="fa-light fas fa-star"></i>
+                        <i class="fa-light fas fa-star"></i></p>
+                    <p class="name">Karol</p>
+                </div>
+            <div class="swiper-slide">
+                <p>Wysoka jakość obsługi klienta, fachowa analiza jeżeli ktoś chce zacząć w krypto serdecznie polecam</p>
+                <p><i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i></p>
+                <p class="name">Karol</p>
+            </div>
+            <div class="swiper-slide">
+                <p>Mimo obaw na początek wszystko co gwarantują sprawdza się, korzystam z ich pomocy od kliku dni i jest świetnie</p>
+                <p><i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i></p>
+                <p class="name">Karol</p>
+            </div>
+            <div class="swiper-slide">
+                <p>Na początku się dziwiłem jak to może działać i funkcjonować, wszystko mi rozjaśnili i dzięki nim mam ciekawe spojrzenie na kryptowaluty</p>
+                <p><i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i></p>
+                <p class="name">Karol</p>
+            </div>
+            <div class="swiper-slide">
+                <p>Rzetelnie przeprowadzona analiza, jako nowa osoba wiele się nauczyłem polecam każdemu</p>
+                <p><i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i></p>
+                <p class="name">Karol</p>
+            </div>
+            <div class="swiper-slide">
+                <p>Mimo obaw na początek wszystko co gwarantują sprawdza się, korzystam z ich pomocy od kliku dni i jest świetnie</p>
+                <p><i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i></p>
+                <p class="name">Karol</p>
+            </div>
+            <div class="swiper-slide">
+                <p>Dobrze zorganizowana analityka, pomoc dostępna 24/7. Polecam serdecznie</p>
+                <p><i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i></p>
+                <p class="name">Karol</p>
+            </div>
+            <div class="swiper-slide">
+                <p>Dobrze zorganizowana analityka, pomoc dostępna 24/7. Polecam serdecznie</p>
+                <p><i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i>
+                    <i class="fa-light fas fa-star"></i></p>
+                <p class="name">Karol</p>
+            </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div> <!-- Przycisk "Następny" -->
+    </div>
+  
+  
+          
+
+
+        
     </div>
     
 <script>
@@ -244,15 +431,178 @@ window.addEventListener('scroll', function() {
           }
         });
 
-window.addEventListener('scroll', function() {
-          var element = document.getElementById('container-text2');
-          var position = element.getBoundingClientRect();
-        
-          // Sprawdzanie, czy element jest widoczny na stronie
-          if (position.top <= window.innerHeight) {
-            element.classList.add('text-visible'); // Dodaj klasę, aby obrazek stał się widoczny i przesunął się na właściwą pozycję
-          }
+
+function scrollToElement(elementId) {
+  var element = document.getElementById(elementId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+    // Przewijanie do elementu "oferty" po kliknięciu przycisku "button1"
+    document.getElementById("button1").addEventListener("click", function(event) {
+        event.preventDefault();
+        const ofertyElement = document.getElementById("baner-text-content");
+        const ofertyElementOffset = ofertyElement.offsetTop;
+        window.scrollTo({
+            top: ofertyElementOffset,
+            behavior: "smooth"
         });
+    });
+
+    // Przewijanie do elementu "opinie" po kliknięciu przycisku "button2"
+    document.getElementById("button2").addEventListener("click", function(event) {
+        event.preventDefault();
+        const opinieElement = document.getElementById("opinie");
+        const opinieElementOffset = opinieElement.offsetTop;
+        window.scrollTo({
+            top: opinieElementOffset,
+            behavior: "smooth"
+        });
+    });
+
+    
+    
+    document.addEventListener("DOMContentLoaded", function () {
+  var boxes = document.querySelectorAll('.block');
+  var windowHeight = window.innerHeight;
+
+  function checkVisibility() {
+    for (var i = 0; i < boxes.length; i++) {
+      var box = boxes[i];
+      if (checkVisibility(box)) {
+        showElement(box, 150 * (i + 1)); // Dodanie klasy visible z opóźnieniem
+      }
+    }
+  }
+
+  function checkVisibility(element) {
+    var position = element.getBoundingClientRect();
+    return position.top <= window.innerHeight;
+  }
+
+  function showElement(element, delay) {
+    setTimeout(function () {
+      element.classList.add('visible');
+    }, delay);
+  }
+
+  function checkAndShowElements() {
+    for (var i = 0; i < boxes.length; i++) {
+      if (checkVisibility(boxes[i])) {
+        showElement(boxes[i], 150 * (i + 1)); // Dodanie klasy visible z opóźnieniem
+      }
+    }
+  }
+
+  window.addEventListener("scroll", checkAndShowElements);
+  checkAndShowElements();
+});
+
+        document.addEventListener("DOMContentLoaded", function () {
+  var boxes = document.querySelectorAll('.block');
+  var windowHeight = window.innerHeight;
+
+  function checkVisibility() {
+    for (var i = 0; i < boxes.length; i++) {
+      var box = boxes[i];
+      if (checkVisibility(box)) {
+        showElement(box, 150 * (i + 1)); // Dodanie klasy visible z opóźnieniem
+      }
+    }
+  }
+
+  function checkVisibility(element) {
+    var position = element.getBoundingClientRect();
+    return position.top <= window.innerHeight;
+  }
+
+  function showElement(element, delay) {
+    setTimeout(function () {
+      element.classList.add('visible');
+    }, delay);
+  }
+
+  function checkAndShowElements() {
+    for (var i = 0; i < boxes.length; i++) {
+      if (checkVisibility(boxes[i])) {
+        showElement(boxes[i], 150 * (i + 1)); // Dodanie klasy visible z opóźnieniem
+      }
+    }
+  }
+
+  window.addEventListener("scroll", checkAndShowElements);
+  checkAndShowElements();
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var boxes = document.querySelectorAll('.box1');
+  var windowHeight = window.innerHeight;
+
+  function checkVisibility() {
+    for (var i = 0; i < boxes.length; i++) {
+      var box = boxes[i];
+      if (checkVisibility(box)) {
+        showElement(box, 150 * (i + 1)); // Dodanie klasy visible z opóźnieniem
+      }
+    }
+  }
+
+  function checkVisibility(element) {
+    var position = element.getBoundingClientRect();
+    return position.top <= window.innerHeight;
+  }
+
+  function showElement(element, delay) {
+    setTimeout(function () {
+      element.classList.add('visible');
+    }, delay);
+  }
+
+  function checkAndShowElements() {
+    for (var i = 0; i < boxes.length; i++) {
+      if (checkVisibility(boxes[i])) {
+        showElement(boxes[i], 150 * (i + 1)); // Dodanie klasy visible z opóźnieniem
+      }
+    }
+  }
+
+  window.addEventListener("scroll", checkAndShowElements);
+  checkAndShowElements();
+});
+
+
+var swiper = new Swiper('.swiper-container', {
+  loop: true, // Zapętlenie slidera
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 5000, // Czas trwania slajdu (5 sekund)
+    disableOnInteraction: false, // Włączenie automatycznego przesuwania po interakcji użytkownika
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next', // Klasa przycisku "Następny"
+    prevEl: '.swiper-button-prev', // Klasa przycisku "Poprzedni"
+  },
+  breakpoints: {
+    // Dodaj breakpoint dla większych ekranów
+    768: {
+      slidesPerView: 4, // Wyświetlaj 4 slajdy na raz
+    }
+}
+});
+
+
+
+
+
 
 
 </script>

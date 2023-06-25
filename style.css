@@ -115,7 +115,7 @@ body {
     align-items: center;
     text-align: center;
     gap: 30px;
-    transform: translateY(-200%);
+    transform: translateY(-200%); 
     opacity: 0;
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
@@ -137,7 +137,8 @@ body {
 }
 
 #container-3box {    
-    margin-top: 50px;    
+    margin-top: 50px;
+    margin-bottom: 100px;    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -313,15 +314,7 @@ body {
     flex-direction: column;
     gap: 30px;
     text-align: center;
-    opacity: 0;
-    transform: translateY(100%);
     margin-bottom: 50px;
-}
-
-#container-text2.text-visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 0.5s;
 }
 
 #container-text2 h2 {
@@ -342,7 +335,9 @@ body {
     gap: 30px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
 }
+
 
 #container-box2 .block {
     background-color: #111a308f;
@@ -350,14 +345,19 @@ body {
     border-radius: 30px;
     border-top: 2px #0e97e5 solid;
     border-right: 2px #0e97e5 solid;
-}
-
-#container-box2 .block {
+    opacity: 0;
+    transform: translateY(50%);
     display: flex;
     flex-direction: column;
     gap: 18px;
     width: 350px;
     height: 255px;
+}
+
+#container-box2 .block.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s, transform 0.5s;
 }
 
 #container-box2 .block i {
@@ -372,6 +372,26 @@ body {
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
+}
+
+#container-text3 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#container-text3 h2 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: -2px;
+}
+
+#container-text3 p {
+    font-size: 18px;
+    color: #7d7c7c;
 }
 
 #baner-text-content {
@@ -393,6 +413,141 @@ body {
     color: #fff;
     background-color: #000;
 }
+
+.box1 {
+    background-color: #111a308f;
+    text-align: center;
+    width: 340px;
+    margin: 15px 0;
+    padding: 30px;
+    border-radius: 30px;
+    border-top: 2px #0e97e5 solid;
+    border-right: 2px #0e97e5 solid;
+    opacity: 0;
+    transform: translateY(50%);
+}
+
+.box1.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.box1 h3 {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+p.price {
+    font-size: 42px;
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+p.undertext {
+    font-size: 13px;
+    color: #7d7c7c;
+    margin-top: 8px;
+}
+
+.list {
+    text-align: left;
+    width: 220px;
+    margin: 18px auto 0;
+    color: #7d7c7c;
+}
+
+.list-element {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    margin-bottom: 15px;
+}
+
+.list-element i {
+    color: #01a2ff;
+}
+
+.container-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container-button .button {
+    background-color: #01a2ff;
+    border-radius: 30px;
+    padding: 13px 20px;
+}
+
+#container-text4 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#container-text4 p.blue-text {
+    color: #0e97e5;
+}
+
+#container-text4 h2 {
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    line-height: 49px;
+}
+
+#container-text4 p {
+    font-size: 18px;
+    color: #7d7c7c;
+}
+
+.swiper-container {
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+
+  
+.swiper-slide {
+    background: #111a308f;
+    padding: 30px;
+    width: 340px;
+    border-radius: 30px;
+    border-top: 2px #0e97e5 solid;
+    border-right: 2px #0e97e5 solid;
+}
+
+.swiper-slide p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #888;
+}
+
+.swiper-slide i {
+    color: #01a2ff;
+    margin-top: 10px;
+}
+
+.swiper-slide p.name {
+    color: #fff;
+}
+
+#container-opinie {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-opinie .swiper-button-next,
+#container-opinie .swiper-button-prev {
+    position: static;
+}
+  
 
 @keyframes slideIn {
     0% {
